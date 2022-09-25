@@ -7,6 +7,135 @@
 }
 
 /* Write CSS code below */
-body{
-    background-color: aqua;
+
+.main-content{
+    height: 1000px;
+    display: grid;
+    grid-template-columns: 300px 700px;
+}
+.left-section{
+    background-color:#535957;
+}
+.right-section{
+    background-color:rgb(245,238,238);
+}
+.left-content{
+    padding:1rem;
+}
+.profile-picture{
+    width: 60%;
+    border: 5px solid white;
+    border-radius: 30%;
+    display: block;
+    margin: auto;
+}
+.name{
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.02px;
+    padding:0.8rem;
+}
+.designation{
+    font-size: 1rem;
+    text-align:center;
+    padding-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+.discription{
+    font: size 0.75em;
+    text-align:center;
+    padding: 1rem;
+}
+.contact-item{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+a{
+    cursor: pointer;
+}
+.contact-lebel{
+    font-size: 0.8rem;
+    letter-spacing: 0.8px;
+}
+.icon{
+    margin:0 0.5rem
+}
+.email,.telephone,.address{
+    display: flex;
+    margin-bottom: 0.3rem;
+}
+.item{
+    margin-top: 0.4rem
+}
+.skills{
+    font-size: 0.75rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem 0rem;
+}
+.skill-name{
+    font-size: 0.65rem;
+    padding-bottom: 0.5rem;
+    text-align: left;
+    text-transform: uppercase;
+}
+.progress-bar{
+    height: 4px;
+    border: 1px solid black;
+    background-color: black;
+    width: 80%;
+}
+.progress-css{
+    width: 70%;
+}
+.progress-js{
+    width: 60%;
+}
+.progress-java{
+    width:45%;
+}
+.progress-ds{
+    width:40%;
+}
+.right-main-content{
+    padding: 2rem 3rem;
+}
+.right-title{
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.education-details{
+    display: flex;
+}
+.about-me-section{
+    margin-bottom: 2rem;
+}
+.para{
+    padding-left: 0.5rem;
+    font-size: 1rem;
+}
+.left-sections{
+    width: 75%;
+}
+.right-sections{
+    width: 25%;
+    text-align: center;
+
+}
+.experience-section{
+    margin-top: 1.4rem;
+}
+.summer{
+    margin-top: 0.6rem;
+}
+@media(max-width:674px){
+    .main-content{
+        grid-template-columns:repeat(1, 1fr);
+    }
 }
