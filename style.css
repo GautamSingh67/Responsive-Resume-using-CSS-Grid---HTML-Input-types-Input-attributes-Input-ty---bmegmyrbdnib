@@ -12,7 +12,6 @@
     height: 1000px;
     display: grid;
     grid-template-columns: 300px 700px;
-    position: relative;
 }
 .left-section{
     background-color:#535957;
