@@ -7,6 +7,9 @@
 }
 
 /* Write CSS code below */
+body{
+    overflow: hidden;
+}
 
 .main-content{
     height: 1000px;
