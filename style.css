@@ -4,104 +4,115 @@
     box-sizing: border-box;
     list-style: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ //   overflow:auto;
 }
 
 /* Write CSS code below */
-body{
-    overflow: hidden;
-}
-
 .main-content{
-    height: 1000px;
     display: grid;
     grid-template-columns: 300px 700px;
+    height: 1000px;
 }
 .left-section{
-    background-color:#535957;
+    background-color: #010016;
 }
+
 .right-section{
-    background-color:rgb(245,238,238);
+    background-color: #f1f1e3;
 }
 .left-content{
-    padding:1rem;
+    padding: 1rem;
 }
-.profile-picture{
+#profile-picture{
     width: 60%;
-    border: 5px solid white;
-    border-radius: 30%;
     display: block;
     margin: auto;
+    border: 5px solid white;
+    border-radius: 30px;
 }
 .name{
     font-size: 1.2rem;
     font-weight: 700;
-    text-align: center;
     text-transform: uppercase;
+    padding: .8rem;
     letter-spacing: 0.02px;
-    padding:0.8rem;
+    text-align: center;
+    color: white;
 }
 .designation{
     font-size: 1rem;
-    text-align:center;
-    padding-bottom: 0.5rem;
+    text-align: center;
     text-transform: uppercase;
+    padding-bottom: 0.5rem;
+    color: white;
+    
 }
-.discription{
-    font: size 0.75em;
-    text-align:center;
+hr{
+    background-color: white;
+}
+.description{
+    font-size: 0.75rem;
+    text-align: center;
     padding: 1rem;
+    color: white;
+    line-height: 1.5rem;
 }
 .contact-item{
     display: flex;
     justify-content: space-evenly;
-
+    
 }
 a{
     cursor: pointer;
 }
-.contact-lebel{
-    font-size: 0.8rem;
-    letter-spacing: 0.8px;
+.contact-details{
+    color: white;
+    margin-top: .5rem;
+}
+.contact-lable{
+    font-size: .8rem;
+    letter-spacing: .8px;
+}
+.email,.phone,.address{
+    display: flex;
+    margin-bottom: .3rem;
+    
 }
 .icon{
-    margin:0 0.5rem
-}
-.email,.telephone,.address{
-    display: flex;
-    margin-bottom: 0.3rem;
-}
-.item{
-    margin-top: 0.4rem
+    margin: 0 0.5rem;
 }
 .skills{
+    padding: 1rem 0.5rem;
     font-size: 0.75rem;
     text-align: center;
     text-transform: uppercase;
-    padding: 1rem 0rem;
+    color: white;
+    letter-spacing: .5px;
 }
 .skill-name{
     font-size: 0.65rem;
     padding-bottom: 0.5rem;
-    text-align: left;
+    color: white;
+    font-weight: 0.5rem;
     text-transform: uppercase;
 }
 .progress-bar{
     height: 4px;
-    border: 1px solid black;
-    background-color: black;
-    width: 80%;
+    border: 1px solid white;
+    background-color: white;
+    margin: .5rem;
 }
-.progress-css{
+.html{
+    width: 85%;
+}
+.css{
+    width: 75%;
+}
+.javascript{
     width: 70%;
 }
-.progress-js{
+.java{
     width: 60%;
-}
-.progress-java{
-    width:45%;
-}
-.progress-ds{
-    width:40%;
 }
 .right-main-content{
     padding: 2rem 3rem;
@@ -109,36 +120,92 @@ a{
 .right-title{
     font-size: 1.2rem;
     font-weight: 700;
+    text-transform: uppercase;
     padding: 0.5rem;
     letter-spacing: 1px;
-    text-transform: uppercase;
+}
+.about{
+    padding-right: 0.5rem;
+    font-size: .8rem;
+    font-weight: 500;
+    /* text-transform: capitalize; */
+    letter-spacing: .5px;
+    padding-left: 0.5rem;
 }
 .education-details{
     display: flex;
+    justify-content:space-evenly;
 }
-.about-me-section{
-    margin-bottom: 2rem;
-}
-.para{
-    padding-left: 0.5rem;
+.qualification{
     font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0.5rem;
+    letter-spacing: 1px;
 }
-.left-sections{
-    width: 75%;
+.qualification-details{
+    padding-right: 0.5rem;
+    font-size: .8rem;
+    font-weight: 500;
+    /* text-transform: capitalize; */
+    letter-spacing: .5px;
+    padding-left: 0.5rem;
+    width: 60ch;
 }
-.right-sections{
-    width: 25%;
-    text-align: center;
+.institute{
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0.5rem;
+    letter-spacing: 1px;  
+}
+.year{
+    padding-right: 0.5rem;
+    font-size: .8rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: .5px;
+    padding-left: 0.5rem;  
+}
 
+.experience-details{
+    display: flex;
+    justify-content: space-evenly;
 }
-.experience-section{
-    margin-top: 1.4rem;
+.position{
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0.5rem;
+    letter-spacing: 1px;
 }
-.summer{
-    margin-top: 0.6rem;
+.position-details{
+    padding-right: 0.5rem;
+    font-size: .8rem;
+    font-weight: 500;
+    /* text-transform: capitalize; */
+    letter-spacing: .5px;
+    padding-left: 0.5rem;
+    width: 60ch;
 }
-@media(max-width:674px){
+.organisation{
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0.5rem;
+    letter-spacing: 1px;  
+}
+.year{
+    padding-right: 0.5rem;
+    font-size: .8rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: .5px;
+    padding-left: 0.5rem;  
+}
+@media only screen and (max-width: 674px) {
     .main-content{
-        grid-template-columns:repeat(1, 1fr);
+       grid-template-columns: repeat(1,1fr);
+
     }
 }
